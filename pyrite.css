@@ -1,4 +1,4 @@
-/*! Pyrite v0.1.0 by LeafyLuigi */
+/*! Pyrite v0.1.1 by LeafyLuigi */
 @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/base.css);
 @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/powercord.css);
 
@@ -41,7 +41,7 @@
 
 
   /* Using HSL? Uncomment this chunk below. */
-  
+
   /* --horizontal-server-list-enabled: 1;
   --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
   --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));

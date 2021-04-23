@@ -1,10 +1,12 @@
-/*! Pyrite v0.1.1 by LeafyLuigi */
+/*! Pyrite v0.1.2 by LeafyLuigi */
 @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/base.css);
 @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/powercord.css);
 
 /* Optional: Horizontal Server List addon. */
 /* @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/horizontal-server-list.css); */
 
+/* Optional: Better Discord addon. Useful if you have BDCompat enabled. Do note that not all plugins are supported. */
+/* @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/better-discord.css); */
 
 :root {
   --background-image: url(https://leafyluigi.github.io/images/Synthscape%20by%20AxiomDesign.png);
@@ -42,10 +44,14 @@
 
   /* Using HSL? Uncomment this chunk below. */
 
-  /* --horizontal-server-list-enabled: 1;
-  --server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
+  /*--server-size: var(--HSL-server-icon-size, var(--HSL-size, 35px));
   --server-spacing: var(--HSL-server-spacing, var(--HSL-spacing, 10px));
   --server-container: calc(var(--server-size) + 20px); */
+
+  /* Using BDCompat? Uncomment the chunk of code below. */
+
+  /* --channel-tabs-enabled: 0; */
+ 
 }
 
 

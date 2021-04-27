@@ -1,7 +1,7 @@
 {
     "name": "Pyrite",
-    "description": "desc",
-    "version": "0.1.2",
+    "description": "Customizable Theme for Discord. Allows custom backgrounds.",
+    "version": "0.1.3",
     "author": "LeafyLuigi",
     "theme": "pyrite.css",
     "license": "MIT"

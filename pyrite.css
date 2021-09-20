@@ -1,4 +1,4 @@
-/*! Pyrite v0.1.6 by LeafyLuigi */
+/*! Pyrite v0.1.7 by LeafyLuigi */
 @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/base.css);
 @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/userModalLayout.css);
 @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/powercord.css);
@@ -29,6 +29,13 @@
   --home-icon: url(https://leafyluigi.github.io/images/Sunset%20Nature%2024%20by%20Bouzid27.png);
   --user-modal-width: 900px;
   --user-modal-height: 600px;
+
+  --green-color: #43b581;
+  --yellow-color: #f9a719;
+  --red-color: #ec4144;
+  --link-color: #00aef3;
+  --live-color:  #583594;
+  --offline-color: #737e8c;
 
   /* For Advanced Users */
   --code-font: Monaco, Consolas, Courier, monospace;
@@ -63,7 +70,7 @@
 
 
 /* Feel free to edit these ones for Dark Mode */
-.theme-dark, .theme-dark .theme-light {
+.theme-dark {
   --card-background: rgba(0,0,0,0.5);
   --side-shading: rgba(0,0,0,0.5);
   --middle-shading: rgba(0,0,0,0.3);

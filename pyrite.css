@@ -1,4 +1,4 @@
-/*! Pyrite v0.1.7 by LeafyLuigi */
+/*! Pyrite -Océan Bleu- v0.1.8 by LeafyLuigi */
 @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/base.css);
 @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/userModalLayout.css);
 @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/powercord.css);
@@ -6,30 +6,49 @@
 /* Optional: Better Discord addon. Useful if you have BDCompat enabled. Do note that not all plugins are supported. */
 /* @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/better-discord.css); */
 
-/* Optional: Horizontal Server List addon. */
+/* Optional: HorizontalServerList. Includes the base for the minitheme. Incompatible with Dribbblish. */
 /* @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/horizontal-server-list.css); */
+
+/* Optional: Border Radius / Radical Status. Does not include Gibbu's base for Radical Status. Incompatible with it. */
+/* @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/borders.css) */
+
+
+/* Below are discontinued. They are very likely unstable and could mess with the UI too much. */
+/* Press Ctrl+Comma (Cmd+Comma on Mac) to open settings. */
 
 /* Optional: Dribbblish. Includes the base for the theme. Incompatible with HorizontalServerList. */
 /* @import url(https://leafyluigi.github.io/discord-themes/pyrite/build/dribbblish.css); */
 
 
 :root {
-  --background-image: url(https://leafyluigi.github.io/images/Synthscape%20by%20AxiomDesign.png);
+  /* URL must be HTTPS and a direct link to the image. You can have a custom background image for the User Popout and the User Modals. */
+  --background-image: url('https://leafyluigi.github.io/images/pexels-josh-sorenson-116359.png');
   --user-modal-image: var(--background-image);
   --user-popout-image: var(--background-image);
+  /* Home icon is for the little button in the top left. */
+  --home-icon: url('https://leafyluigi.github.io/images/pexels-chris-munnik-2604991.png');
+
+  /* Image attachment can be "fixed", "scroll" or "local" */
+  /* scroll/local attaches the background to the modal completely while fixed keeps it in line with the background */
+  /* Default is "fixed" */
   --background-attachment: fixed;
   --user-modal-attachment: var(--background-attachment);
   --user-popout-attachment: var(--background-attachment);
-  --primary-color: #FF6F00;
-  --secondary-color: #E06100;
-  --hover-color: #FF801F;
-  --tooltip-color: #B85000;
-  --mention-background: var(--primary-color);
-  --mention-opacity: 0.3;
-  --home-icon: url(https://leafyluigi.github.io/images/Sunset%20Nature%2024%20by%20Bouzid27.png);
-  --user-modal-width: 900px;
-  --user-modal-height: 600px;
 
+  /* Colours can be Hex, RGB(A) or HSL(A). */
+  /* Discord uses HSL(A) for anything that uses the saturation factor variable while using Hex for anything without transparency and RGBA for transparency. */
+  /* HSL(A) is extremely complex and should not be used unless you know what you are doing. Pyrite has everything in Hex for simplicity. */
+  /* Primary is the "main colour" */
+  /* Secondary is an accent colour of sorts. It's not used as often as Primary. It should be a shade or two lighter or darker compared to Primary. */
+  /* Hover is a secondary accent colour of sorts and is often used when hovering over something. Like Secondary, it should be a shade or two lighter or darker compared to Primary. */
+  /* Tooltip is used for tooltips. It can whatever colour you wish. */
+  --primary-color: #387eff;
+  --secondary-color: #3298e0;
+  --hover-color: #139dff;
+  --tooltip-color: #1967ab;
+
+  /* These colours are used for statues and other coloured things. Ignoring Green they default to Discord's HSL though converted to Hex. */
+  /* Green's default here is the old green. The new green is #3ba55d */
   --green-color: #43b581;
   --yellow-color: #f9a719;
   --red-color: #ec4144;
@@ -66,11 +85,15 @@
 
   /* --channel-tabs-enabled: 0; */
  
+
+  /* Debug; please do not touch */
+  --update-notice-0: none;
 }
 
 
 /* Feel free to edit these ones for Dark Mode */
-.theme-dark {
+.theme-dark,
+.theme-dark :not(.previewContainer-1xQAsw) .theme-light {
   --card-background: rgba(0,0,0,0.5);
   --side-shading: rgba(0,0,0,0.5);
   --middle-shading: rgba(0,0,0,0.3);
@@ -78,7 +101,8 @@
 }
 
 /* Feel free to edit these ones for Light Mode */
-.theme-light {
+.theme-light,
+.theme-light :not(.previewContainer-1xQAsw) .theme-dark:not(.sidebar-1tnWFu):not(.guilds-2JjMmN):not(.sidebarRegion-1VBisG) {
   --card-background: rgba(255,255,255,0.05);
   --side-shading: rgba(255,255,255,0.4);
   --middle-shading: rgba(255,255,255,0.3);

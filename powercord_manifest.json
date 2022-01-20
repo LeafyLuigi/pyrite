@@ -1,9 +1,8 @@
 {
-    "name": "Pyrite",
+    "name": "Pyrite -Océan Bleu-",
     "description": "Customizable Theme for Discord. Allows custom backgrounds and contains a few addons.",
-    "version": "0.1.6",
+    "version": "0.1.8",
     "author": "LeafyLuigi",
     "theme": "pyrite.css",
-    "license": "MIT",
-    "splashTheme": "splash.css"
+    "license": "MIT"
 }
